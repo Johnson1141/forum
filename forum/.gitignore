@@ -26,4 +26,4 @@
 
 
 ##端口##
-/src/main/resources/application.properties
+forum/src/main/java/com/example/demo/ForumApplication.java
