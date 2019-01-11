@@ -26,4 +26,4 @@
 
 
 ##端口##
-forum/src/main/resources/application.properties
+application.properties
