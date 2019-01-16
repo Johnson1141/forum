@@ -1,12 +1,95 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:layout="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <title>主页面</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>shu</title>
+	<link rel="stylesheet" type="text/css" href="./css/default.css">
+	<link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 <body>
-  <div>
-主页面
-  </div>
+	<div class="wrapper">
+	    <header>
+	      <div class="left">
+	        <button id="menu" title="Menu"><i class="fa fa-bars fa-2x"></i></button>
+	        <h1>SHU考试信息分享</h1>
+	      </div>
+	      
+	      <div class="utils right">
+	        <a href="#" class='alerts'><i class="fa fa-bell-o fa-lg"></i></a>
+	        <i class="sep">&nbsp;</i>
+	        <a href="#"><i class="fa fa-life-ring fa-lg"></i></a>
+	      </div>
+	  	</header>
+	    <!--//Header-->
+	    <div class="content">
+	       <aside>
+	        <h2>Site Logo</h2>
+	        <div class="controls">
+	        <input type="search" id="search" name="search" />
+	          <label for="search"><i class="fa fa-search"></i></label>
+	        </div>
+	          <nav class='site-nav'>
+	            <a class="active" href="#"><i class="fa fa-home"></i> Home</a>
+	            <a href="#"><i class="fa fa-gift"></i> Deals &amp; packages</a>
+	            <a href="#"><i class="fa fa-line-chart"></i> Report Builder</a>
+	            <a href="#"><i class="fa fa-bell-o"></i> Notifications</a>
+	          </nav> 
+	          <footer>
+	            <a href="" class="avatar"><img src="img/128.jpg" alt="" />brady Sammons</a>
+	            <a href=""><i class="fa fa-sign-out fa-rotate-180"></i> Logout</a>  
+	          </footer>
+	        </aside>
+
+	        <!--//sidebar-->
+	        <section>
+				<div class="container-fluid">
+					<div class="row clearfix">
+						<div id="main" class="col-md-12 column" style="padding: 50px 50px 50px 50px">
+
+
+							<div>
+								<h2>
+									Heading
+								</h2>
+								<p>
+									Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+								</p>
+								<p>
+									<a class="btn" href="#">View details »</a>
+								</p>
+								<hr>
+							</div>
+
+
+						</div>
+
+					</div>
+				</div>
+
+	        </section>
+	      <div class="site-footer">
+	        <div class="right">
+	          <a href="">Terms of Use</a>
+	          <span class="sep"></span>
+	          <a href="" class='feedback'><i class="fa fa-bullhorn"></i> Feedback</a>
+	        </div>
+		  </div>
+	    </div>
+	    <!--//Main Content-->
+	</div>
+
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script>
+	$(function () {
+	    $('#menu').on('click', function () {
+	        $(this).toggleClass('active');
+	        $('body').toggleClass('nav-open');
+	    });
+	});
+	</script>
 </body>
 </html>
